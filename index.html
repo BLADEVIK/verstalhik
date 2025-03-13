@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Service</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content center">
+      <button class="hamburger">&#9776;</button>
+      <div class="logo">Logo</div>
+      <nav>
+        <a href="#">People nearby</a>
+        <a href="#">Search</a>
+        <button class="premium-btn">Premium <i class="fas fa-crown"></i></button>
+      </nav>
+    </div>
+  </header>
+  <div class="main-container center">
+    <aside class="sidebar">
+      <div class="user-profile">
+        <img src="./icons/user.svg" alt="Profile Picture" class="profile-pic">
+        <section class="user-profile-chosen">
+          <p class="username">Test2412</p>
+        <button class="get-premium-btn">GET PREMIUM</button>
+        </section>
+        
+      </div>
+      <ul class="menu">
+        <li> <img src="./icons/profile.svg" alt="profile"> Profile</li>
+        <li><img src="./icons/my_photo.svg" alt="My photos"> My photos</li>
+        <li><img src="./icons/messages.svg" alt="Message"> Messages</li>
+        <li><img src="./icons/favorites.svg" alt="Favorites"> Favorites</li>
+        <li> <img src="./icons/guets.svg" alt="Guests"> Guests</li>
+        <li> <img src="./icons/setings.svg" alt="Settings"> Settings</li>
+        <li> <img src="./icons/log out.svg" alt="Log out"> Log out</li>
+      </ul>
+    </aside>
+    <main class="content">
+      <div class="title"><span class="title-text">Закончились кредиты?</span></div>
+      <div class="discount-banner">
+        <p>Скидка 40%</p>
+        <p>Предложение действует в течение</p>
+        <div class="timer">00 : 28 : 12</div>
+      </div>
+      <div class="credit-cards">
+        <div class="card">
+          <p class="offer">One time offer!</p>
+          <p>50 <i class="fas fa-smile"></i></p>
+          <button>Buy now</button>
+        </div>
+        <div class="card">
+          <p>150 <i class="fas fa-smile"></i></p>
+          <button>Buy now</button>
+        </div>
+        <div class="card">
+          <p>300 <i class="fas fa-smile"></i></p>
+          <button>Buy now</button>
+        </div>
+        <div class="card">
+          <p>500 <i class="fas fa-smile"></i></p>
+          <button>Buy now</button>
+        </div>
+      </div>
+      <div class="large-card">
+        <p>1000 <i class="fas fa-smile"></i></p>
+        <button>Buy now</button>
+      </div>
+      <div class="checkbox-section">
+        <input type="checkbox" id="agree">
+        <label for="agree">By clicking Checkbox you agree and accept our Privacy Policy, and Terms of use</label>
+      </div>
+      <div class="footer-info">
+        <div class="diamond"></div>
+        <div class="icons-container">
+          <div class="icon-item" style="--angle: 0deg;">
+            <i class="fas fa-comment"></i>
+            <p>Отправлять сообщения</p>
+          </div>
+          <div class="icon-item" style="--angle: 60deg;">
+            <i class="fas fa-gift"></i>
+            <p>Поднимать профиль</p>
+          </div>
+          <div class="icon-item" style="--angle: 120deg;">
+            <i class="fas fa-eye"></i>
+            <p>Просматривать фото</p>
+          </div>
+          <div class="icon-item" style="--angle: 180deg;">
+            <i class="fas fa-cog"></i>
+            <p>Просматривать скрытые фото</p>
+          </div>
+          <div class="icon-item" style="--angle: 240deg;">
+            <i class="fas fa-cog"></i>
+            <p>Просматривать скрытые фото</p>
+          </div>
+          <div class="icon-item" style="--angle: 300deg;">
+            <i class="fas fa-gift"></i>
+            <p>Поднимать профиль</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.sidebar').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
