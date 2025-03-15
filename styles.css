@@ -284,32 +284,86 @@ nav a {
   margin: 10px 0;
 }
 
+.card {
+  border: 2px solid #800080;
+  background: #9564AA1A;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card-price {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.card-smile {
+  width: 17px;
+  height: 17px;
+  background: #FFCF2D;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 8px;
+}
+
 .card button {
-  background: #800080;
-  color: #FFFFFF;
+  background: white;
+  color: #aca3a3;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 26px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .card button:hover {
   background: #660066;
 }
+
 .checkbox-section {
-  background: #FFB6C1;
-  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 20px;
+}
+
+.checkbox-section input {
+  accent-color: #9564AA;
+  width: 20px;
+  height: 20px;
 }
 
 .checkbox-section label {
   margin-left: 10px;
-  font-size: 12px;
-  color: #000000;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+
+.checkbox-section a {
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-decoration: none;
 }
 
 /* Нижняя информационная секция */
@@ -372,6 +426,7 @@ nav a {
     grid-column: span 2;
   }
 }
+
 @media (max-width: 600px) {
   .hamburger {
     display: block;
