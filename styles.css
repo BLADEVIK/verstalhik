@@ -29,6 +29,11 @@ header {
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #96c0d1;
 }
 
 nav {
@@ -41,14 +46,15 @@ nav a {
   color: #FFFFFF;
   text-decoration: none;
   margin-left: 20px;
-
   font-family: Ubuntu;
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+}
 
-
+nav a:hover {
+  text-decoration: underline;
 }
 
 .premium-btn {
@@ -66,7 +72,10 @@ nav a {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+}
 
+.premium-btn:hover {
+  background: #4a304f;
 }
 
 .premium-btn i {
@@ -97,6 +106,7 @@ nav a {
   border: 2px;
   max-width: 275px;
   background: #9564AA1A;
+  height: 90%;
 }
 
 .user-profile {
@@ -286,7 +296,7 @@ nav a {
   font-size: 14px;
 }
 
-.card p {
+.card-price {
   font-size: 18px;
   margin: 10px 0;
 }
@@ -297,6 +307,7 @@ nav a {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
+  position: relative;
 }
 
 .card-conteiner {
@@ -333,14 +344,51 @@ nav a {
   background: white;
   color: #aca3a3;
   border: none;
-  padding: 15px 26px;
+  padding: 15px 25px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: Ubuntu;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-.card button:hover {
-  background: #660066;
+.hidden-text {
+  display: none;
+  font-family: Ubuntu;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #FFCF2D;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  align-items: center;
+  position: absolute;
+  top: -12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 14px;
+}
+
+.hidden-text.visible {
+  display: block;
+}
+
+.button.hover-effect {
+  background: #FFCF2D;
+  color: #000;
+}
+
+.card.hover-effect {
+  background: #9564AA;
+}
+
+.card-price.hover-effect {
+  color: white;
 }
 
 .checkbox-section {
@@ -353,6 +401,7 @@ nav a {
   accent-color: #9564AA;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .checkbox-section label {
@@ -365,6 +414,7 @@ nav a {
 }
 
 .checkbox-section a {
+  color: #9564AA;
   font-family: Ubuntu;
   font-weight: 400;
   font-size: 13px;
@@ -388,7 +438,7 @@ nav a {
   left: 50%;
   margin-top: -45px;
   margin-left: -62px;
-
+  cursor: pointer;
 }
 
 
@@ -406,6 +456,7 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%) rotate(var(--angle)) translateX(100px) rotate(calc(-1 * var(--angle)));
   text-align: center;
+  cursor: pointer;
 }
 
 .icon-item i {
