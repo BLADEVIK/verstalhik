@@ -485,13 +485,20 @@ nav a:hover {
 .icon-item-text {
   width: 100px;
 }
+.icon-item-text:hover{
+  color: #5c1a85;
+ 
+ }
 
 /* Адаптивность */
 @media (min-width: 601px) and (max-width: 1024px) {
   .main-container {
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 32% 70%;
   }
-
+  .timer{
+    font-size: 150%;
+    padding: 10px;
+  }
   .credit-cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -499,9 +506,36 @@ nav a:hover {
   .card:last-child:nth-child(odd) {
     grid-column: span 2;
   }
+
+  .discount-banner {
+    gap: 10px;
+    min-width: 95%;
+  }
 }
 
 @media (max-width: 600px) {
+  .content{
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 95%;
+  }
+  header{
+    min-height: 50px;
+  }
+  .discount-banner{
+    gap: 20px;
+  }
+  .discount-banner-price{
+    font-size: 20px;
+  }
+  .discount-banner-sale{
+    font-size: 10px;
+  }
+  .timer{
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .hamburger {
     display: block;
   }
@@ -547,14 +581,22 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     position: static;
+    justify-items: center;
+    justify-content: center;
   }
 
   .icon-item {
     position: static;
     transform: none;
   }
-
+  
+  .icon-item p{
+    width: auto;
+  }
   .diamond {
     display: none;
   }
+}
+@media (max-width: 340px){
+ 
 }
