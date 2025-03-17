@@ -226,6 +226,10 @@ nav a:hover {
 
 }
 
+.card-credit-conteiner {
+  display: none
+}
+
 .discount-banner {
   display: flex;
   justify-content: space-around;
@@ -485,20 +489,31 @@ nav a:hover {
 .icon-item-text {
   width: 100px;
 }
-.icon-item-text:hover{
+
+.icon-item-text:hover {
   color: #5c1a85;
- 
- }
+
+}
+
+.banner {
+  display: none;
+}
+
+.btn-tru-now {
+  display: none;
+}
 
 /* Адаптивность */
 @media (min-width: 601px) and (max-width: 1024px) {
   .main-container {
     grid-template-columns: 32% 70%;
   }
-  .timer{
+
+  .timer {
     font-size: 150%;
     padding: 10px;
   }
+
   .credit-cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -511,31 +526,41 @@ nav a:hover {
     gap: 10px;
     min-width: 95%;
   }
+
+  .diamond {
+    display: block;
+  }
 }
 
 @media (max-width: 600px) {
-  .content{
+  .content {
     padding-left: 10px;
     padding-right: 10px;
     min-width: 95%;
   }
-  header{
+
+  header {
     min-height: 50px;
   }
-  .discount-banner{
+
+  .discount-banner {
     gap: 20px;
   }
-  .discount-banner-price{
+
+  .discount-banner-price {
     font-size: 20px;
   }
-  .discount-banner-sale{
+
+  .discount-banner-sale {
     font-size: 10px;
   }
-  .timer{
+
+  .timer {
     font-size: 25px;
     padding-left: 5px;
     padding-right: 5px;
   }
+
   .hamburger {
     display: block;
   }
@@ -583,20 +608,137 @@ nav a:hover {
     position: static;
     justify-items: center;
     justify-content: center;
+    padding-top: 20%;
   }
 
   .icon-item {
     position: static;
     transform: none;
   }
-  
-  .icon-item p{
+
+  .icon-item p {
     width: auto;
   }
+
   .diamond {
-    display: none;
+    display: block;
+    top: 15%;
   }
 }
-@media (max-width: 340px){
- 
+
+@media (max-width: 340px) {
+  .icons-container {
+    padding-top: 30%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+    padding-left: 5px;
+    padding-top: 100px;
+  }
+
+  .icon-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .icon-item-invisible {
+    display: none;
+  }
+
+  .title-text {
+    font-size: 25px;
+  }
+
+  /* Слайдер */
+  .banner {
+    width: 260px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .left-section {
+    background-color: #FFC107;
+    padding: 6px 7px;
+    position: absolute;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    top: 24px;
+    left: -7px;
+    height: 23px;
+
+  }
+
+  .left-section p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 4px;
+  }
+
+  .right-section {
+    background-color: #6D2077;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    min-width: 240px;
+    height: 60px;
+    justify-content: flex-end;
+    margin-left: 5%;
+  }
+
+
+  .right-section span {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .right-section .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #FFC107;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    margin: 0 10px;
+  }
+
+  .btn-tru-now {
+    min-width: 268px;
+    height: 55px;
+    top: 231px;
+    left: 300px;
+    border-radius: 10px;
+    background: #FFCF2D;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .btn-tru-now:hover {
+    background: #8d4bc1;
+  }
+
+  .discount-banner {
+    display: none;
+  }
+
+  .credit-cards {
+    display: none;
+  }
 }
