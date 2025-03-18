@@ -95,6 +95,7 @@ nav a:hover {
 .main-container {
   display: grid;
   grid-template-columns: 28% 73%;
+  background-image: url("./icons/pattern.svg");
 }
 
 /* Боковая панель */
@@ -107,6 +108,7 @@ nav a:hover {
   max-width: 275px;
   background: #9564AA1A;
   height: 90%;
+  background-image: "./";
 }
 
 .user-profile {
@@ -474,9 +476,7 @@ nav a:hover {
 .icon-item p {
   font-size: 12px;
   color: #9564AA;
-
   margin-top: 5px;
-
   font-family: Ubuntu;
   font-weight: 700;
   font-size: 12px;
@@ -491,7 +491,7 @@ nav a:hover {
 }
 
 .icon-item-text:hover {
-  color: #5c1a85;
+  color: #FFCF2D;
 
 }
 
@@ -501,6 +501,16 @@ nav a:hover {
 
 .btn-tru-now {
   display: none;
+}
+
+.slider {
+  display: none;
+}
+
+/* Стили для пагинации */
+.pagination {
+  display: none;
+  /* Скрываем по умолчанию */
 }
 
 /* Адаптивность */
@@ -608,7 +618,7 @@ nav a:hover {
     position: static;
     justify-items: center;
     justify-content: center;
-    padding-top: 20%;
+    padding-top: 30%;
   }
 
   .icon-item {
@@ -650,6 +660,58 @@ nav a:hover {
   }
 
   /* Слайдер */
+  .slider {
+    display: block;
+    /* Показываем слайдер */
+  }
+
+  /* Скрываем все слайды по умолчанию */
+  .banner {
+    display: none;
+  }
+
+  /* Показываем только первый слайд */
+  .banner:nth-child(1n) {
+    display: none;
+  }
+
+  .banner:first-child {
+    display: flex;
+  }
+
+  /* Показываем и стилизуем пагинацию */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .pagination-dot.active {
+    background: #FFC500;
+    /* Желтый цвет для активной точки */
+  }
+
+  /* Убеждаемся, что кнопка Try now видна */
+  .btn-tru-now {
+    display: block;
+  }
+
+
+
+
+
   .banner {
     width: 260px;
     height: 60px;

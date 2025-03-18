@@ -63,3 +63,21 @@ cards.forEach(card => {
     hiddenText.classList.remove('visible');
   });
 });
+
+// Слайдер
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.banner');
+  const dots = document.querySelectorAll('.pagination-dot');
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      // Скрываем все слайды
+      slides.forEach(slide => slide.style.display = 'none');
+      // Показываем выбранный слайд
+      slides[index].style.display = 'flex';
+      // Обновляем активную точку
+      dots.forEach(d => d.classList.remove('active'));
+      dot.classList.add('active');
+    });
+  });
+});
