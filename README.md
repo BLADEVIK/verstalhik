@@ -1,1 +1,1 @@
-## deply: https://verstalhik-bladevik.netlify.app/
+## deply: https://adcombo-bladevik.netlify.app/
